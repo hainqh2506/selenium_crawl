@@ -7,8 +7,7 @@ bước 2: sửa file bot.py để thiết lập trường thông tin cần craw
 
 
 vào file bot.py và chỉnh sửa biến i tương ứng trường dữ liệu cần crawl
-    vd: i = 1 tương ứng với trường: đăng ký mới
-     i=  2 tương ứng với trường : đăng ký thay đổi...
+    vd: i = 1 tương ứng với trường: đăng ký mới,  i=  2 tương ứng với trường : đăng ký thay đổi...
 
 
     
