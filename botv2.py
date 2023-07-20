@@ -2,7 +2,7 @@ from selenium import webdriver
 import time
 from selenium.webdriver.common.by import By
 
-def download_pdf(url, download_path,otp):
+def download_pdf(url, download_path,opt):
     # Khởi tạo tùy chọn cho trình duyệt Chrome
     options = webdriver.ChromeOptions()
     options.add_experimental_option("detach", True)
@@ -24,7 +24,7 @@ def download_pdf(url, download_path,otp):
     driver.get(url)
     time.sleep(2)  # Chờ trang web tải xong nội dung
 #chon muc can tai
-    new_page = driver.find_element(By.XPATH, f"//a[@id='LnkActiveAnnType' and contains(@href, \"javascript:__doPostBack('ctl00$C$RptProdGroups$ctl{otp:02}$LnkActiveAnnType','')\")]")
+    new_page = driver.find_element(By.XPATH, f"//a[@id='LnkActiveAnnType' and contains(@href, \"javascript:__doPostBack('ctl00$C$RptProdGroups$ctl{opt:02}$LnkActiveAnnType','')\")]")
     new_page.click()
     time.sleep(3)
     #down load page 1.
@@ -50,9 +50,9 @@ download_path = "D:\crawl\Test5"
 # chon muc can tai
 #chon opt = 
 # 1, Dang ky moi ; 2, Dang ky thay doi ; 3, Thong bao thay doi ; 4,Vi pham / Thu hoi; 5, Giải thể ; 6, Loại khác
-otp = 1
-download_pdf(url, download_path,otp)
+opt = 1
+download_pdf(url, download_path,opt)
 
-#for otp in range(1,7,1):
-#    download_pdf(url, download_path,otp)
+#for opt in range(1,7,1):
+#    download_pdf(url, download_path,opt)
  
