@@ -3,11 +3,11 @@ bước 1: cài đặt môi trường:
 cài đặt python 3.11 và cài thêm selenium bằng câu lệnh: pip install selenium
 
 
-bước 2: sửa file bot.py để thiết lập trường thông tin cần crawl.
+bước 2: sửa file botv2.py để thiết lập trường thông tin cần crawl.
 
 
 vào file bot.py và chỉnh sửa biến i tương ứng trường dữ liệu cần crawl
-    vd: i = 1 tương ứng với trường: đăng ký mới,  i=  2 tương ứng với trường : đăng ký thay đổi...
+    vd: otp = 1 tương ứng với trường: đăng ký mới,  otp=  2 tương ứng với trường : đăng ký thay đổi...
 
 
     
@@ -16,7 +16,7 @@ bước 3: đổi đường dẫn
 
 
 bước 4: save
-save và chạy file bot.py
+save và chạy file botv2.py
 
 ---------------------------------------------------------------------------------------------------------------------
  Dưới đây là giải thích ngắn gọn về các bước trong code:
